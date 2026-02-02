@@ -1,0 +1,96 @@
+<html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <title>Reservation-section</title>
+            <link rel="stylesheet" href="css/style.css">
+        </head>
+        <body>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html"></a></li>
+                     </ul>
+                </nav>
+            </header>
+
+            <main>
+                <section class="reservation">
+                    <h1>Reservation</h1>
+                    <p>This is where you book your day and time to be our beloved guest in savannah grill restaurant.</p>
+                    
+                </section>
+            </main>
+            <head>
+                <meta charset="UTF-8">
+                <title>Reservation</title>
+                <link rel="stylesheet" href="style.css">
+
+            </head>
+            <body>
+                <button id="reservation">Make a reservation</button>
+                <!--reservation form-->
+                <div id="reservation form" class="hidden">
+                    <h2>Reservation form</h2>
+                    <form>
+                        <input type="text"placeholder="full name"required>
+                        <input type="email" placeholder="Email"required>
+                        <input type="date" required>
+                        <input type="time"required>
+                        <button type ="submit">submit</button>
+
+                    </form>
+                </div>
+            </body>
+            <style>
+            body{
+                font-family:arial,sans-serif;
+                padding:40px;
+            }
+           #reservation{
+                padding:12px 20px;
+                background-color:blue;
+                color:white;
+                border:none;
+                border-radius:5px;
+                cursor:pointer;
+            }
+            reservation:hover{
+                background-color:gold;
+            }
+            #reservationform{
+                margin-top:20px;
+                max-width:300px;
+            }
+            #reservationform input,
+            #reservationform button{
+                width:100%;
+                padding:10px;
+                margin:8px 0;
+            }
+            .hidden{
+                display:none;
+            }
+
+            </style>
+
+            <script>
+                const reserveBtn =document.getElementById("reserveBtn");
+                const reservationForm =document.getElementById("reservationform");
+
+                reserveBtn.addEventListener("click",()=>{reservationform.classlist.toggle("hidden");});
+                
+
+            </script>
+
+            <footer>
+                <p>&copy;savannah grill restaurant</p>
+            </footer>
+        </body>
+    </html>
+</html>
